@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Prog_school.Models;
@@ -9,9 +10,10 @@ using Prog_school.Models;
 namespace Prog_school.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230108144007_changedStudentFIO")]
+    partial class changedStudentFIO
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -115,14 +117,15 @@ namespace Prog_school.Migrations
                     b.Property<long>("StudentId")
                         .HasColumnType("bigint");
 
+                    b.Property<long>("Subject")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("SubjectId")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
                     b.HasIndex("StudentId");
-
-                    b.HasIndex("SubjectId");
 
                     b.ToTable("StudentSubjects");
                 });
@@ -236,12 +239,6 @@ namespace Prog_school.Migrations
                     b.HasOne("Prog_school.Models.Student", "Student")
                         .WithMany("Subjects")
                         .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Prog_school.Models.Subject", "Subject")
-                        .WithMany()
-                        .HasForeignKey("SubjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

@@ -11,7 +11,7 @@ namespace Prog_school.Models
         public long StudentId { get; set; }
         public Student Student { get; set; }
         public long SubjectId { get; set; }
-        public long Subject { get; set; }
+        public Subject Subject { get; set; }
         public List<SubjectStudentGrade> subjectStudentGrades { get; set; }
     }
 }

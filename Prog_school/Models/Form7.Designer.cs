@@ -36,7 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.cabinetListBox = new System.Windows.Forms.ListBox();
-            this.subjectListBox = new System.Windows.Forms.CheckedListBox();
+            this.subjectsListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -70,7 +70,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(105, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 25);
+            this.label1.Size = new System.Drawing.Size(118, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "ФИО_учителя";
             // 
@@ -78,7 +78,7 @@
             // 
             this.teacherFIO.Location = new System.Drawing.Point(323, 143);
             this.teacherFIO.Name = "teacherFIO";
-            this.teacherFIO.Size = new System.Drawing.Size(235, 30);
+            this.teacherFIO.Size = new System.Drawing.Size(235, 26);
             this.teacherFIO.TabIndex = 3;
             // 
             // label2
@@ -86,7 +86,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(112, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 75);
+            this.label2.Size = new System.Drawing.Size(115, 60);
             this.label2.TabIndex = 4;
             this.label2.Text = "Предмет, \r\nкоторый \r\nон(она) ведёт";
             // 
@@ -100,39 +100,42 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Уволить";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(105, 294);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 25);
+            this.label3.Size = new System.Drawing.Size(139, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "Номер_кабинета";
             // 
             // cabinetListBox
             // 
             this.cabinetListBox.FormattingEnabled = true;
-            this.cabinetListBox.ItemHeight = 25;
+            this.cabinetListBox.ItemHeight = 20;
             this.cabinetListBox.Location = new System.Drawing.Point(323, 294);
             this.cabinetListBox.Name = "cabinetListBox";
-            this.cabinetListBox.Size = new System.Drawing.Size(235, 54);
+            this.cabinetListBox.Size = new System.Drawing.Size(235, 64);
             this.cabinetListBox.TabIndex = 9;
             // 
-            // subjectListBox
+            // subjectsListBox
             // 
-            this.subjectListBox.FormattingEnabled = true;
-            this.subjectListBox.Location = new System.Drawing.Point(323, 197);
-            this.subjectListBox.Name = "subjectListBox";
-            this.subjectListBox.Size = new System.Drawing.Size(235, 79);
-            this.subjectListBox.TabIndex = 10;
+            this.subjectsListBox.FormattingEnabled = true;
+            this.subjectsListBox.ItemHeight = 20;
+            this.subjectsListBox.Location = new System.Drawing.Point(323, 203);
+            this.subjectsListBox.Name = "subjectsListBox";
+            this.subjectsListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.subjectsListBox.Size = new System.Drawing.Size(235, 64);
+            this.subjectsListBox.TabIndex = 10;
             // 
             // Form7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 512);
-            this.Controls.Add(this.subjectListBox);
+            this.Controls.Add(this.subjectsListBox);
             this.Controls.Add(this.cabinetListBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
@@ -160,6 +163,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox cabinetListBox;
-        private System.Windows.Forms.CheckedListBox subjectListBox;
+        private System.Windows.Forms.ListBox subjectsListBox;
     }
 }

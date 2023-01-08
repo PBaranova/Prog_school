@@ -8,11 +8,7 @@ namespace Prog_school.Models
 {
     public class Student: BaseClass
     {
-        //Имя
-        public string FirstName { get; set; }
-        //Фамилия
-        public string LastName { get; set; }
-        // Отчество 
+        public string StudentFIO { get; set; } 
         public long ClassId { get; set; }
         public Class Class { get; set; }
         //в каком классе учится

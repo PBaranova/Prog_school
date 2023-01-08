@@ -37,5 +37,17 @@ namespace Prog_school.Models
             var teachersForm = new Form4();
             teachersForm.ShowDialog();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            var studentsForm = new Form3();
+            studentsForm.ShowDialog();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            var  form =  new Form10();
+            form.ShowDialog();
+        }
     }
 }

@@ -43,9 +43,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(170, 31);
+            this.label1.Location = new System.Drawing.Point(128, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(605, 39);
+            this.label1.Size = new System.Drawing.Size(481, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Здравствуйте, дорогой завуч школы.";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -54,9 +55,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label3.Location = new System.Drawing.Point(206, 98);
+            this.label3.Location = new System.Drawing.Point(154, 80);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 58);
+            this.label3.Size = new System.Drawing.Size(91, 50);
             this.label3.TabIndex = 10;
             this.label3.Text = "  Поиск\r\n данных:";
             // 
@@ -64,9 +66,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label4.Location = new System.Drawing.Point(600, 107);
+            this.label4.Location = new System.Drawing.Point(450, 87);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 29);
+            this.label4.Size = new System.Drawing.Size(108, 25);
             this.label4.TabIndex = 11;
             this.label4.Text = "Сведения:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -76,9 +79,10 @@
             this.button3.BackColor = System.Drawing.Color.Firebrick;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(177, 167);
+            this.button3.Location = new System.Drawing.Point(133, 136);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 71);
+            this.button3.Size = new System.Drawing.Size(128, 58);
             this.button3.TabIndex = 14;
             this.button3.Text = "Поиск предмета\r\n";
             this.button3.UseVisualStyleBackColor = false;
@@ -88,9 +92,10 @@
             this.button4.BackColor = System.Drawing.Color.Firebrick;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(177, 264);
+            this.button4.Location = new System.Drawing.Point(133, 214);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(170, 71);
+            this.button4.Size = new System.Drawing.Size(128, 58);
             this.button4.TabIndex = 15;
             this.button4.Text = "Поиск учителя";
             this.button4.UseVisualStyleBackColor = false;
@@ -100,9 +105,10 @@
             this.button5.BackColor = System.Drawing.Color.Firebrick;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(177, 359);
+            this.button5.Location = new System.Drawing.Point(133, 292);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(170, 71);
+            this.button5.Size = new System.Drawing.Size(128, 58);
             this.button5.TabIndex = 16;
             this.button5.Text = "Оценки учеников\r\n";
             this.button5.UseVisualStyleBackColor = false;
@@ -112,9 +118,10 @@
             this.button6.BackColor = System.Drawing.Color.Firebrick;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(588, 167);
+            this.button6.Location = new System.Drawing.Point(441, 136);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(170, 71);
+            this.button6.Size = new System.Drawing.Size(128, 58);
             this.button6.TabIndex = 17;
             this.button6.Text = "Сведения об учителях";
             this.button6.UseVisualStyleBackColor = false;
@@ -125,30 +132,34 @@
             this.button7.BackColor = System.Drawing.Color.Firebrick;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(588, 264);
+            this.button7.Location = new System.Drawing.Point(441, 214);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(170, 71);
+            this.button7.Size = new System.Drawing.Size(128, 58);
             this.button7.TabIndex = 18;
             this.button7.Text = "Сведения об учениках";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Firebrick;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Location = new System.Drawing.Point(588, 359);
+            this.button8.Location = new System.Drawing.Point(441, 292);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(170, 71);
+            this.button8.Size = new System.Drawing.Size(128, 58);
             this.button8.TabIndex = 19;
             this.button8.Text = "Сведения об успеваемости";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(980, 490);
+            this.ClientSize = new System.Drawing.Size(735, 398);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -158,6 +169,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);

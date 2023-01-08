@@ -35,7 +35,7 @@ namespace Prog_school.Models
         private void button1_Click(object sender, EventArgs e)
         {
             var login = textBox4.Text;
-            var password = textBox4.Text;
+            var password = textBox5.Text;
             using (AppDbContext dbContext = new AppDbContext()){
                 //var teacherIsOnSystem = dbContext.Teachers.Any(t=> t.Login == login && password == t.Password);
                 var teacherIsOnSystem = true;
